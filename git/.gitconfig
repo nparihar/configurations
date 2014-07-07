@@ -1,0 +1,33 @@
+[color]
+	ui = auto
+[push]
+	default = simple
+[alias]
+    # Basics
+    st = status -s
+    ci = commit
+    ca = commit --amend
+    co = checkout
+    br = branch
+
+    # Log
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    logtree = log --graph --oneline --decorate --all
+
+    # Diff
+    diff = diff --word-diff
+    d = diff --word-diff
+    dc = diff --cached
+
+    # Resets
+    r = reset
+    r1 = reset HEAD^
+    r2 = reset HEAD^^
+    rh = reset --hard
+    rh1 = reset HEAD^ --hard
+    rh2 = reset HEAD^^ --hard
+    rh3 = reset HEAD^^^ --hard
+
+    # Santos specific
+    cosmith = co dp-cr/develop-santos-v1 -b
+    cosmith = co dp-cr/develop-fireos -b
