@@ -29,5 +29,5 @@
     rh3 = reset HEAD^^^ --hard
 
     # Santos specific
-    cosmith = co dp-cr/develop-santos-v1 -b
-    cosmith = co dp-cr/develop-fireos -b
+    cosmith = checkout dp-cr/develop-santos-v1 -b
+    cofires = checkout dp-cr/develop-fireos -b
